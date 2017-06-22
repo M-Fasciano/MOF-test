@@ -1,0 +1,29 @@
+header {
+    &.header {
+        background: url('/images/icon.png') no-repeat;
+        background-size: 48px 46px;
+        background-position: top center;
+        min-height: 46px;
+        margin: 5rem 0;
+        position: relative;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            border-top: 1px solid $header-line;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 47%;
+        }
+        &:before {
+            left: 0;
+        }
+        &:after {
+            right: 0;
+        }
+        
+        h2 {
+            visibility: hidden;
+        }
+    }
+}

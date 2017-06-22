@@ -1,0 +1,63 @@
+.instagram {
+    @include rem(font-size, 1.4rem);
+    color: #757575;
+    background-color: $white;
+    display: inline-block;
+    margin-bottom: 15rem;
+    padding: 2rem;
+    padding-bottom: 30rem;
+    position: relative;
+    width: calc(50% - 10px);
+    &:nth-child(2) {
+        @include rem(margin-right, 10px);
+    }
+    &:nth-child(3) {
+        @include rem(margin-left, 10px);
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #C2D2C2;
+        border-top: 0;
+        bottom: -3rem;
+        left: 10%;
+        height: 3rem;
+        width: 80%;
+    }
+
+    &--header h2 {
+        @include rem(font-size, 2.8rem);
+        font-family: 'GFS Didot', serif;
+        font-weight: 100;
+        color: $black;
+    }
+
+    &--content {
+        max-width: 320px;
+        margin: 0 auto;
+        &:after {
+            content: "";
+            position: absolute;
+            background: url('/images/deco.png') no-repeat;
+            background-size: 7px 101px;
+            background-position: top center;
+            left: 50%;
+            top: calc(50% + -10px);
+            height: 25px;
+            width: 7px;
+        }
+    }
+
+    &--image {
+        margin-top: 5rem;
+        margin-right: 2rem;
+        position: absolute;
+        z-index: 1;
+        > img {
+            @include box-shadow(0 20px 60px #999);
+            animation-duration: .7s;
+            animation-name: fadeIn;
+        }
+    }
+
+}

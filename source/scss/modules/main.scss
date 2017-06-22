@@ -1,0 +1,19 @@
+.container {
+    background: $light-grey url('/images/leaf.png') no-repeat;
+    background-size: 285px 418px;
+    background-position: top left;
+
+    h1 {
+        visibility: hidden;
+        margin: 0
+    }
+    
+    main {
+        font-size: 0;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 5rem;
+        text-align: center;
+    }
+}
+

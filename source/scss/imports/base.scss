@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.6;
+}
+
+body {
+    @include rem(font-size, 1.6rem);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
